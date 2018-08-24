@@ -61,7 +61,7 @@ else
     su tsm -c "sudo /opt/tableau/tableau_server/packages/bin.${TABLEAU_SERVER_DATA_DIR_VERSION}/tabcmd initialuser --server localhost:80 --username admin --password admin" 2>&1 1>> /var/log/tableau_install.log
     log all done
 
-    touch /opt/tableau/docker_build/.init-done
+    touch /opt/tableau/.init-done
 
 fi
 

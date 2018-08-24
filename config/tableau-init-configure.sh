@@ -1,7 +1,7 @@
 #!/bin/bash
 
-TABLEAU_VERSION="2018.2.0"
-LANG=en_US.UTF-8
+export TABLEAU_VERSION="2018.2.0"
+export LANG=en_US.UTF-8
 
 # Exit on first error
 set -e

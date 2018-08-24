@@ -28,7 +28,7 @@ if [ -f /opt/tableau/docker_build/.init-done ]; then
 else
 
     log start initalize tsm
-    su tsm -c "sudo sh -x /opt/tableau/tableau_server/packages/scripts.*/initialize-tsm -f --accepteula" 2>&1 1> /var/log/tableau_install.log
+    su tsm -c "sudo bash -x /opt/tableau/tableau_server/packages/scripts.*/initialize-tsm -f --accepteula" 2>&1 1> /var/log/tableau_install.log
     log initalize done
 
     source /etc/profile.d/tableau_server.sh
